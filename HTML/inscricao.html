@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+    <title>Inscrição</title>
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Inscrição</h1>
+        <nav>
+            <ul>
+                <a class="botoesMenu" href="index.html"><li id="paginaInicial">Página Inicial</li></a>
+                <a class="botoesMenu" href="inscricao.html"><li>Inscricao</li></a>
+                <a class="botoesMenu" href="livros.html"><li>Livros</li></a>
+                <a class="botoesMenu" href="hq's.html"><li>HQ's</li></a>
+                <a class="botoesMenu" href="mangas.html"><li>Mangás</li></a>
+                <a class="botoesMenu" href="manhwa.html"><li>Manhwas</li></a>
+            </ul><!-- Colocar em tópicos -->
+        </nav><!-- Menu -->
+    </header><!-- Cabeçalho -->
+    <form>
+        <label> CPF: </label> <!-- Titulo do campo -->
+        <input type="text" name="cpf" placeholder="123.456.789-10" required> <!-- type é o tipo de dado: text, number, date, password, email.--> <!-- Input é o campo de digitação, campo de entrada -->
+        <br><br> <!--Pular linha -->
+        <label> Nome:</label>
+        <input type="text" name="nome" placeholder="nome" required>
+        <br><br>
+        <label> Senha:</label>
+        <input type="text" name="senha" placeholder="senha" required>
+        <br><br>
+        <label> Email:</label>
+        <input type="text" name="Email" placeholder="Email" required>
+        <br><br>
+        <label>Data de Nascimnento:</label>
+        <input type="date" name="dtNascimento" required>
+        <br><br>
+        <label>Gênero: </label> <br>
+        <input type="checkbox" name="genero" value="Masculino">
+        <label> Masculino </label>
+        <input type="checkbox" name="genero" value="Feminino">
+        <label> Feminino </label>
+        <input type="checkbox" name="genero" value="Não Binário">
+        <label> Não Binário </label>
+        <br><br>
+        <label> UF </label> <br>
+        <input type="radio" name="uf" value="sp">
+        <label>SP</label>
+        <input type="radio" name="uf" value="rj">
+        <label>RJ</label>
+        <input type="radio" name="uf" value="rr">
+        <label>RR</label>
+        <input type="radio" name="uf" value="ma">
+        <label>MA</label>
+        <br><br>
+        <label>Estado Civil: </label>
+        <select name="estadoCivil">
+            <option value="Casado">Casado</option>
+            <option value="Solteiro">Solteiro</option>
+            <option value="Divorciado">Divorciado</option>
+            <option value="Viúvo">Viúvo</option>
+        </select>
+        <br><br>
+        <button type="submit">Cadastrar</button>
+    </form>
+</body>
+</html>
